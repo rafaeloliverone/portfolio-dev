@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: var(--green);
+background:  ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
 `;
@@ -14,11 +14,18 @@ export const Content = styled.section`
 `;
 
 export const Card = styled.div`
-  border: 1px solid #c8c8c8;
+  border: 1px solid ${props => props.theme.colors.secondary};
   border-radius: 0.25rem;
   padding: 1rem 1rem;
   margin-bottom: 2rem;
   flex: 1;
+
+  h3 {
+    color: ${props => props.theme.colors.purple};
+  }
+  p {
+    color: ${props => props.theme.colors.ternary};
+  }
 
   @media (max-width: 767.20px) {
     margin-top: 4rem;

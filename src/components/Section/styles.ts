@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: var(--green);
+  background: ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
 `;
@@ -14,6 +14,14 @@ export const Content = styled.section`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  span {
+    color: ${props => props.theme.colors.ternary};
+  }
+
+  h3 {
+    color: var(--purple);
+  }
 
   img {
     filter: grayscale(100%) !important;

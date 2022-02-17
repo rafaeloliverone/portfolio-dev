@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: var(--green);
+  background: ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
 `;
@@ -26,7 +26,7 @@ export const ContainerTechnologies = styled.div`
   
   img {
     &:first-child {
-        margin-left: 0;
+      margin-left: 0;
     }
 
     margin-left: 2rem;
@@ -39,7 +39,13 @@ export const Content = styled.section`
   align-items: center;
   height: 88vh;
 
+  h1 {
+    color: ${props => props.theme.colors.purple};
+
+  }
+
   p {
     font-size: 150%;
+    color: ${props => props.theme.colors.ternary};
   }
 `

@@ -5,6 +5,8 @@ import {useTranslation} from "react-i18next";
 import { Container, Content, Menu } from './styles';
 import brazilLogo from '../../assets/brazil.png';
 import euaLogo from '../../assets/eua.png';
+import { ToogleDarkLight } from '../ToogleDarkLight'; 
+
 
 export function Header() {
   const [t, i18n] = useTranslation('common');
@@ -37,9 +39,8 @@ export function Header() {
                 </NavLink>
               </Menu>
             </Col>
-              <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
-              <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img>
-            
+              {/* <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
+              <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img> */}
           </Row>
         </ContainerBootstrap>
       </Content>

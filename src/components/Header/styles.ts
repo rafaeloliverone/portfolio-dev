@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 
 export const Container = styled.header`
-  background: var(--grey);
+  background: ${props => props.theme.colors.secondary};
+  position: relative;
 
   .active {
     button {
-      background-color: blue;
+      background-color: var(--purple);
+      color: #fff;
     }
   }
 `
@@ -21,6 +23,7 @@ export const Content = styled.div`
 
   span {
     height: 100%;
+    color: var(--white);
     display: flex;
     align-items: center;
   }
@@ -37,8 +40,8 @@ export const Menu = styled.div`
   button {
     font-size: 1rem;
     margin-left: 1rem;
-    color: #FFF;
-    background: var(--background);
+    color: var(--white);
+    background: var(--secondary);
     border: 0;
     padding: 0 2rem;
     border-radius: 0.25rem;

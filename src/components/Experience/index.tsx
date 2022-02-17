@@ -1,6 +1,6 @@
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
 
-import { Container, Content, ContainerDateStartEnd, ContainerRoleAndCompany, Triangule, ContainerFlex } from './styles';
+import { Container, Content, ContainerDateStartEnd, ContainerRoleAndCompany, Triangule, ContainerFlex, ContainerFlexTriangule } from './styles';
 
 
 interface ExperienceProps {
@@ -21,7 +21,7 @@ export const Experience: React.FC<ExperienceProps> = (experienceProps) => {
                 <Col col xs={12} sm={12}  md={12} lg={12} xl={12}>
                   <ContainerRoleAndCompany>
                     <h1>{experienceProps.role}</h1>
-                    <h1>@ {experienceProps.company}</h1>
+                    <h1><a href="https://www.indracompany.com/pt-br/minsait" target="_blank" rel="noreferrer">@ {experienceProps.company}</a> </h1>
                   </ContainerRoleAndCompany>
                   <ContainerDateStartEnd>
                     <h1>{experienceProps.startDate}-</h1>
@@ -29,10 +29,10 @@ export const Experience: React.FC<ExperienceProps> = (experienceProps) => {
                   </ContainerDateStartEnd>
 
                   {experienceProps.description.map( item => 
-                    <ContainerFlex>
+                    <ContainerFlexTriangule>
                       <Triangule />
                       <span>{item}</span>
-                    </ContainerFlex>
+                    </ContainerFlexTriangule>
                   )}
                 </Col>
                 <Col col xs={12} sm={12}  md={4} lg={4} xl={6}>

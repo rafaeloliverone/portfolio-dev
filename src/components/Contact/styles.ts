@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: var(--green);
+  background: ${props => props.theme.colors.primary};
+  background-position: center;
   display: flex;
   flex: 1;
   height: 68vh;
@@ -14,9 +15,9 @@ export const Container = styled.div`
 
 export const Content = styled.section`
   max-width: 1120px;
+  flex: 1;
   display: flex;
   align-items: center;
-  flex: 1;
   margin-bottom: 3rem;
 
   @media (max-width: 768px) {
@@ -24,17 +25,41 @@ export const Content = styled.section`
       height: 250px;
     }
   }
-
+  
   form {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: space-around;
+    padding: 0 1rem;
+
+    border: 1px solid var(--secondary);
+    border-radius: 0.25rem;
+    height: 60vh;
+
+    color: #c3c3c3;
     
     input {
-      height: 2rem;
+      height: 3rem;
+      font-size: 1.1rem;
+      background-color: var(--white);
+      color: black;
+
+      &:last-child {
+        margin-top: 2rem;
+        transition: all 0.25s;
+        border: 0;
+
+        color: var(--white);
+        background-color: var(--purple);
+
+        &:hover {
+          filter: blur(10);
+        }
+      }
     }
     
     textarea {
+      font-size: 1.1rem;
       min-height: 150px;
       max-height: 200px;
     }
@@ -45,5 +70,34 @@ export const Content = styled.section`
       width: 100%;
     }
 
+    
+
+  }
+`
+
+export const InputWithIcon = styled.div`
+  display: flex;
+  position: relative;
+  margin-top: 1rem;
+
+  input, textarea {
+    padding-left: 4rem;
+    position: relative;
+
+    outline: none;
+  }
+
+  textarea {
+    padding-top: 10px
+  }
+
+  img {
+    position: absolute;
+    top: 12%;
+    bottom: 0;
+    right: 10px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
   }
 `
