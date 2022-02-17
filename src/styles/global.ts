@@ -1,10 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+
   :root {
     --background: #c3c3c3;
     --grey: #c3c3c3;
     --green: #f8f8f8;
+    --greyNew: #d4d4d4;
+    
+    --primary: #2a2a2a;
+    --secondary: #575757;
+    --white: #fff;
+    --purple: #8D8EEB;
   }   
 
   * {
@@ -23,7 +30,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--background);
+    background: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.secondary};
+
     -webkit-font-smoothing: antialiased;
   }
 
