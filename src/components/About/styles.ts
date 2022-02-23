@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-background:  ${props => props.theme.colors.primary};
+  background:  ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
+
 `;
 
 export const Content = styled.section`
@@ -11,6 +12,7 @@ export const Content = styled.section`
   display: flex;
   margin-top: 2rem;
   flex: 1;
+  height: 100vh;
 `;
 
 export const Card = styled.div`

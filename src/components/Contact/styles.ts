@@ -5,12 +5,21 @@ export const Container = styled.div`
   background-position: center;
   display: flex;
   flex: 1;
-  height: 68vh;
+  height: 50vh;
 
   @media (max-width: 767px) {
     height: 100%;
   }
   justify-content: center;
+`;
+
+
+export const ImageContact = styled.img`
+  @media (max-width: 768px) {
+    height: 250px;
+    display: none;
+  }
+
 `;
 
 export const Content = styled.section`
@@ -20,11 +29,13 @@ export const Content = styled.section`
   align-items: center;
   margin-bottom: 3rem;
 
-  @media (max-width: 768px) {
+
+  /* @media (max-width: 768px) {
     img {
       height: 250px;
+      display: none;
     }
-  }
+  } */
   
   form {
     display: flex;
@@ -34,7 +45,7 @@ export const Content = styled.section`
 
     border: 1px solid var(--secondary);
     border-radius: 0.25rem;
-    height: 60vh;
+    height: 50vh;
 
     color: #c3c3c3;
     
@@ -69,9 +80,6 @@ export const Content = styled.section`
       border: 1px solid #c3c3c3;
       width: 100%;
     }
-
-    
-
   }
 `
 

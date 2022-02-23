@@ -39,8 +39,8 @@ export function About() {
               </Col>
               <Col col xs={12} sm={12} md={8} lg={8} xl={8}>
                 <Card>
-                  <h3>Eu sou o Fernando, prazer em conhece-lo</h3>
-                  <p>Meu nome completo é Fernando Moreira Costa, tenho 33 anos, nasci e cresci em uma cidadezinha do interior de Rondônia chamada Ariquemes , sai de lá com 18 anos para me aventurar em Curitiba/PR onde moro atualmente.</p>
+                  <h3>Eu sou o Rafael, prazer em conhece-lo</h3>
+                  <p>Meu nome completo é Rafael Oliveira Batista, tenho 21 anos, nasci em Campina Grande mas atualmente resido em João Pessoa ambas cidades na Paraíba.</p>
                   <p>💻 Sou programador não por formação mas por vocação, 🥑 vegetariano,🎻 violinista,🤔 piadista ❤️e fã de beterraba.</p>
                   <hr></hr>
                   <h3>Histórico profissional</h3>
