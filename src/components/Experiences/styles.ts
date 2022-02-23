@@ -5,7 +5,34 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 `;
+
+export const Content = styled.section`
+  max-width: 1120px;
+  display: flex;
+  justify-content: start;
+  align-items:flex-start;
+  margin-top: 1rem;
+  height: 86%;
+
+  @media (max-width: 768px) {
+    /* margin-top: rem; */
+  }
+
+  div:last-child {
+    margin-bottom: 0.5rem;
+  }
+`
+export const LoadingSpinner = styled.div`
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 50vh;
+  height: 70vh;
+`
 
 export const NameCompanies = styled.div`
   background: ${props => props.theme.colors.primary};
@@ -13,10 +40,9 @@ export const NameCompanies = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 
   .active {
-    border-bottom: solid 3px var(--purple);
+    transition: all 1s;
     color: ${props => props.theme.colors.ternary};
   }
 
@@ -31,6 +57,11 @@ export const NameCompanies = styled.div`
     margin-right: 30px;
     padding: 10px 5px;
     position: relative;
+
+    .active {
+    transition: all 1s;
+    color: ${props => props.theme.colors.ternary};
+  }
 
     &:last-child {
       margin-right: 0;
@@ -55,19 +86,6 @@ export const NameCompanies = styled.div`
 
   }
 `;
-
-export const Content = styled.section`
-  max-width: 1120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 88vh;
-  overflow: auto;
-
-  div:last-child {
-    margin-bottom: 0.5rem;
-  }
-`
 
 export const ExperienceMargin = styled.div`
   margin-top: 1rem;
