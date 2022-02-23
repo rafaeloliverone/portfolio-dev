@@ -1,18 +1,17 @@
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
 import { useState } from 'react'; 
-import { Container } from './styles';
 
-// import linkedinLogo from '../../assets/linkedinColorful.svg';
+import { Container } from './styles';
 import lightMode from '../../assets/lamp.png';
 import darkMode from '../../assets/moon.png';
                   
-interface Props {
+
+interface PropsToogle {
   toogleTheme(): void
 }
 
-
-export const ToogleDarkLight: React.FC<Props> = ({ toogleTheme }) => {
-  const [icon, setIcon] = useState(darkMode)
+export const ToogleDarkLight: React.FC<PropsToogle> = ({ toogleTheme }) => {
+  const [icon, setIcon] = useState(lightMode)
 
   const toogle = () => {
     icon === lightMode ? setIcon(darkMode) : setIcon(lightMode) 

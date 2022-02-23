@@ -9,6 +9,6 @@ export default {
         progressBar: '#575757',
         white: '#fff',
         purple: '#8D8EEB',
-        mode: '#8D8EEB',
+        mode: '#575757',
     }
 };
