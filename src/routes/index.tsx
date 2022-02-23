@@ -8,7 +8,11 @@ import { Section } from '../components/Section';
 import { Contact } from '../components/Contact';
 
 
-const Routes = () => {
+interface Props {
+  changeIdioma(ptJson: any, enJson: any): void
+}
+
+const Routes: React.FC<Props> = ({ changeIdioma }) => {
   return(
     <RoutesDom>
       <Route path="/" element={
@@ -26,7 +30,7 @@ const Routes = () => {
       <Route path="/experiences" element={
         <>
           <Header />
-          <Experiences />
+          <Experiences changeIdioma={changeIdioma}/>
         </>   
       } />
       <Route path="/contato" element={

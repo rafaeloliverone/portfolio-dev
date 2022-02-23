@@ -5,7 +5,6 @@ import {useTranslation} from "react-i18next";
 import { Container, Content, Menu } from './styles';
 import brazilLogo from '../../assets/brazil.png';
 import euaLogo from '../../assets/eua.png';
-import { ToogleDarkLight } from '../ToogleDarkLight'; 
 
 
 export function Header() {
@@ -26,21 +25,21 @@ export function Header() {
             <Col col sm={12} md={8} lg={8} xl={8}>
               <Menu>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                  <button>Home</button>
+                  <button>{t("home")}</button>
                 </NavLink>
                 <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                  <button>Sobre</button>
+                  <button>{t("about")}</button>
                 </NavLink>
                 <NavLink to="/experiences" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                  <button>Experiências</button>
+                  <button>{t("experiences")}</button>
                 </NavLink>
                 <NavLink to="/contato" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                  <button>Contato</button>
+                  <button>{t("contact")}</button>
                 </NavLink>
               </Menu>
             </Col>
-              {/* <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
-              <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img> */}
+              <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
+              <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img>
           </Row>
         </ContainerBootstrap>
       </Content>

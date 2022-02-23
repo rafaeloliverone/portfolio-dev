@@ -1,5 +1,6 @@
 {
-    "welcome": {
-        "title": "Bem vindo ao Reacttt, pegou"
-    }
+    "home": "Início",
+    "about": "Sobre",
+    "experiences": "Experiências",
+    "contact": "Contato"
 }
