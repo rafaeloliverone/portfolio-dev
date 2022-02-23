@@ -1,16 +1,33 @@
 import styled from 'styled-components';
+import { shade } from 'polished'
 
 export const Container = styled.header`
   padding: 2rem 1rem;
   background:  ${props => props.theme.colors.secondary} !important;
   border-radius: 0.25rem;
   width: 100%;
+  min-height: 60vh;
+  max-height: 60vh;
+  overflow: auto;
+
+  &::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.colors.purple};
+    border-radius: 10rem; 
+
+    &:hover {
+      background-color: ${props => shade(0.25, props.theme.colors.purple)};
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
 `
 
 export const Content = styled.section`
   font-size: 20px;
   display: flex;
-  overflow: auto;
   
   h1 {
     font-size: 20px;
