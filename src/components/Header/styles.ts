@@ -15,10 +15,13 @@ export const Container = styled.header`
 export const Content = styled.div`
   max-width: 1120px;
   margin: 0 auto;
-  padding: 1rem 1rem 2rem;
-  height: 12vh;
+  height: 5rem;
   display: flex;
   align-items: center;
+
+  @media (max-width: 767px) {
+    height: 8rem;
+  }
 
   span {
     height: 100%;
@@ -30,7 +33,7 @@ export const Content = styled.div`
 
 export const Languages = styled.div`
   text-align: center;
-
+  
   img {
     margin-right: 10px;
 
@@ -42,8 +45,8 @@ export const Languages = styled.div`
       margin-left: 0px;
     }
   }
-  @media (max-width: 700px) {
-    margin-top: 1rem;
+  @media (max-width: 767px) {
+    margin: 0.5rem 0;
   }
 
 
@@ -53,7 +56,7 @@ export const Menu = styled.div`
   display: flex;
   align-items: center;
   text-align: start;
-
+  /* margin-top: 1rem; */
   @media (max-width: 700px) {
     justify-content: space-around;
   }

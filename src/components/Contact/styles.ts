@@ -1,25 +1,27 @@
 import styled from 'styled-components';
+import { shade, } from 'polished'
+
 
 export const Container = styled.div`
   background: ${props => props.theme.colors.primary};
   background-position: center;
+  overflow-y: hidden;
   display: flex;
   flex: 1;
-  height: 50vh;
+  height: 87vh;
 
   @media (max-width: 767px) {
     height: 100%;
   }
+
   justify-content: center;
 `;
-
 
 export const ImageContact = styled.img`
   @media (max-width: 768px) {
     height: 250px;
     display: none;
   }
-
 `;
 
 export const Content = styled.section`
@@ -27,45 +29,103 @@ export const Content = styled.section`
   flex: 1;
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
-
-
-  /* @media (max-width: 768px) {
-    img {
-      height: 250px;
-      display: none;
-    }
-  } */
   
+  .contact {
+    background-color: ${props => props.theme.colors.contact};
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h3 {
+      color: ${props => shade(0.50, '#fff')};
+    }
+
+    p {
+      color: ${props => shade(0.50, '#fff')};
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  }
+
+  .form {
+    background-color: ${props => props.theme.colors.secondary};
+    
+    h3 {
+      color: ${props => shade(0, '#fff')};
+
+    }    
+  }
+
+  .iconsSocialMedias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .singleIcon {
+      margin-top: 2rem;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+      span {
+        visibility: hidden;
+      }
+    }
+   
+  }
+
   form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0 1rem;
-
-    border: 1px solid var(--secondary);
-    border-radius: 0.25rem;
-    height: 50vh;
-
+    justify-content: space-between;
+    padding: 2rem 1rem;
     color: #c3c3c3;
+
+    h3 {
+      margin-bottom: 10px;
+
+    }
+    @media (max-width: 768px) {
+      h3 {
+        margin-bottom: 3.5rem;
+      }
+    }
     
-    input {
+    
+    input, button {
       height: 3rem;
       font-size: 1.1rem;
       background-color: var(--white);
       color: black;
+    }
 
-      &:last-child {
-        margin-top: 2rem;
-        transition: all 0.25s;
-        border: 0;
+    button {
+      width: 100%;
+      margin-top: 2rem;
+      transition: all 0.25s;
+      border: 0;
 
-        color: var(--white);
-        background-color: var(--purple);
+      color: var(--white);
+      background-color: var(--purple);
 
-        &:hover {
-          filter: blur(10);
-        }
+      &:hover {
+        background-color: ${props => shade(0.25, props.theme.colors.purple)};
       }
     }
     
@@ -76,7 +136,7 @@ export const Content = styled.section`
     }
 
     input, textarea {
-      border-radius: 0.25rem;
+      border-radius: 0.rem;
       border: 1px solid #c3c3c3;
       width: 100%;
     }

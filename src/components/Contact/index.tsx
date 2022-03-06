@@ -1,52 +1,85 @@
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
-import { useState } from 'react';
+import { useSpring, animated  } from "react-spring";
+import { useTranslation } from "react-i18next";
 
-import { Container, Content, InputWithIcon, ImageContact } from './styles';
-import contactLogo from '../../assets/contact.svg';
+
+import { Container, Content, InputWithIcon } from './styles';
 import profileLogo from '../../assets/profile.png';
 import penLogo from '../../assets/pen.png';
 import messageLogo from '../../assets/message.png';
 
+import instaLogo from '../../assets/ig-instagram.svg';
+import gitLogo from '../../assets/iconmonstr-github-3.svg';
+import linkedinLogo from '../../assets/linkedin-app.svg';
+
 
 export const Contact = () => {
+  const [t, i18n] = useTranslation('common');
+
+  const transition = useSpring({ 
+    from: { opacity: 0, y: 3000, rotateZ: 0, transform: 'scale(1)' }, 
+    to: { opacity: 1, y: 0, rotateZ: 0 , transform: 'scale(1)'}, delay: 200
+  });
+  
+
   return (
     <Container>
       <Content>
         <ContainerBootstrap>
-          <Row>
-            <Col col xs={12} sm={12} md={6} lg={6} xl={6}>
+          <animated.div style={{ ...transition }} >
+            <Row style={{justifyContent: 'center', }}>
+              <Col className='contact' col xs={12} sm={12} md={4} lg={4} xl={4}>
+                <h3 style={{fontSize: '40px'}}>{t("contact")}</h3>
+                <p style={{fontSize: '25px'}}>{t("descriptionContact")}</p>
+
+                <Col className='iconsSocialMedias' col xs={12} sm={12} md={12} lg={10} xl={12}>
+                  <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
+                    <img src={instaLogo} alt="Twitter Logo" width={60} height={60}/>
+                    <span style={{marginLeft: '10px', color: '#e44675'}}>Instagram</span>
+                  </Col>
+                  <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
+                    <img src={gitLogo} alt="Twitter Logo" width={60} height={60}/>
+                    <a href="https://github.com/rafaeloliverone">
+                      <span style={{marginLeft: '10px', color: '#000'}}>Github&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                  </Col>
+                  <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
+                    <img src={linkedinLogo} alt="Twitter Logo" width={60} height={60}/>
+                    <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/">
+                      <span style={{marginLeft: '10px', color: '#0a66c2'}}>LinkedIn&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                  </Col>
+                </Col>
+              </Col>
+
+              <Col className='form' col xs={12} sm={12} md={7} lg={7} xl={7}>
+                <form>
+                  <h3 style={{fontSize: '40px'}}>{t("titleContact")}</h3>
+                  
+                  <div className='formWithInputs'>
+                    <InputWithIcon>
+                      <input type="text" name="name" autoComplete="off" placeholder={t("nameForm")}></input>
+                      <img src={profileLogo} width={40} height={40}></img>
+                    </InputWithIcon>
+                    <InputWithIcon>
+                      <input type="text" name="assunto" autoComplete="off" placeholder={t("topicForm")}/>
+                      <img src={penLogo}></img>
+                    </InputWithIcon>
+                    <InputWithIcon>
+                      <textarea name='message' autoComplete="off" placeholder={t("messageForm")}></textarea>
+                      <img src={messageLogo} width={40} height={40}></img>
+                    </InputWithIcon>
+
+                    {/* <input type="submit" value={t("textButtonSubmit") ? t("textButtonSubmit") || "!dsa" : "dsad" } /> */}
+                    <button type="submit" onClick={() => console.log('submeteu')} >
+                      <span>{t("textButtonSubmit")}</span>
+                    </button>
+                  </div>
+                </form>
+              </Col>
               
-              <ImageContact src={contactLogo} width={400} height={400}></ImageContact>
-            </Col>
-            <Col col xs={12} sm={12} md={6} lg={6} xl={6}>
-              {/* <form style={{ backgroundImage: `url(${require('../../assets/teste.svg')})` }}> */}
-              <form>
-                <div>
-                  <h3>Formulário de Contato</h3>
-                </div>
-
-                <div>
-                  <InputWithIcon>
-                    <input type="text" name="name" autoComplete="off" placeholder='Nome'></input>
-                    <img src={profileLogo} width={40} height={40}></img>
-                  </InputWithIcon>
-                  <InputWithIcon>
-                    <input type="text" name="assunto" autoComplete="off" placeholder='Assunto'/>
-                    <img src={penLogo}></img>
-                  </InputWithIcon>
-                  <InputWithIcon>
-                    <textarea name='message' autoComplete="off" placeholder='Mensagem'></textarea>
-                    <img src={messageLogo} width={40} height={40}></img>
-                  </InputWithIcon>
-
-                  <input type="submit" value="Enviar" />
-                </div>
-              </form>
-            </Col>
-            <Col>
-            </Col>
-          </Row>
-
+            </Row>
+          </animated.div>
         </ContainerBootstrap>
       </Content>
     </Container>

@@ -19,7 +19,7 @@ export function Header() {
       <Content>
         <ContainerBootstrap>
           <Row>
-            <Col col sm={12} md={10} lg={10} xl={10}>
+            <Col col xs={12} sm={12} md={9} lg={10} xl={10}>
               <Menu>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                   <button>{t("home")}</button>
@@ -35,7 +35,7 @@ export function Header() {
                 </NavLink>
               </Menu>
             </Col>
-            <Col col sm={12} md={2} lg={2} xl={2}>
+            <Col col xs={12} sm={12} md={3} lg={2} xl={2}>
               <Languages >
                 <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
                 <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img>
