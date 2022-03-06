@@ -4,7 +4,6 @@ export const Container = styled.div`
   background:  ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
-
 `;
 
 export const Content = styled.section`
@@ -27,6 +26,10 @@ export const Card = styled.div`
   }
   p {
     color: ${props => props.theme.colors.ternary};
+  }
+
+  hr {
+    border: 1px solid ${props => props.theme.colors.purple};
   }
 
   @media (max-width: 767.20px) {
@@ -59,4 +62,3 @@ export const ContainerImageProfile = styled.div`
     border-radius: 0.5rem;
   }
 `;
-

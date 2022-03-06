@@ -4,6 +4,7 @@ export const Container = styled.div`
   background: ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
 `;
 
 export const ContainerProfile = styled.div`
