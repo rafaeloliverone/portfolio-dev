@@ -19,7 +19,6 @@ export const Content = styled.div`
   height: 12vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   span {
     height: 100%;
@@ -29,12 +28,34 @@ export const Content = styled.div`
   }
 `;
 
+export const Languages = styled.div`
+  text-align: center;
+
+  img {
+    margin-right: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 700px) {
+    margin-top: 1rem;
+  }
+
+
+`
+
 export const Menu = styled.div`
   display: flex;
   align-items: center;
+  text-align: start;
 
-  @media (min-width: 1100px) {
-    justify-content: flex-end;
+  @media (max-width: 700px) {
+    justify-content: space-around;
   }
 
   button {

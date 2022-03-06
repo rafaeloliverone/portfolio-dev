@@ -2,7 +2,7 @@ import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid
 import { Link, NavLink } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 
-import { Container, Content, Menu } from './styles';
+import { Container, Content, Menu, Languages } from './styles';
 import brazilLogo from '../../assets/brazil.png';
 import euaLogo from '../../assets/eua.png';
 
@@ -19,10 +19,7 @@ export function Header() {
       <Content>
         <ContainerBootstrap>
           <Row>
-            <Col col sm={12} md={4} lg={4} xl={4}>
-              <span>Rafael Oliveira</span>
-            </Col>
-            <Col col sm={12} md={8} lg={8} xl={8}>
+            <Col col sm={12} md={10} lg={10} xl={10}>
               <Menu>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                   <button>{t("home")}</button>
@@ -38,8 +35,13 @@ export function Header() {
                 </NavLink>
               </Menu>
             </Col>
-              <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
-              <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img>
+            <Col col sm={12} md={2} lg={2} xl={2}>
+              <Languages >
+                <img src={brazilLogo} width={40} height={40} onClick={() => changeLanguage('pt')} ></img>
+                <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img>
+              </Languages>
+            </Col>
+              
           </Row>
         </ContainerBootstrap>
       </Content>
