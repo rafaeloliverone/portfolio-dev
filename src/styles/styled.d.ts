@@ -14,6 +14,7 @@ declare module 'styled-components' {
         white: string,
         purple: string,
         mode: string,
+        contact: string,
     };
   }
 }

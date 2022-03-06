@@ -2,5 +2,11 @@
     "home": "Início",
     "about": "Sobre",
     "experiences": "Experiências",
-    "contact": "Contato"
+    "contact": "Contato",
+    "titleContact": "Envie-me uma mensagem ",
+    "descriptionContact": "Siga-me nas redes sociais",
+    "nameForm": "Nome",
+    "topicForm": "Assunto",
+    "messageForm": "Mensagem",
+    "textButtonSubmit": "Enviar"
 }

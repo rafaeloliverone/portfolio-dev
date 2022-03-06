@@ -10,5 +10,6 @@ export default {
         white: '#000',
         purple: '#8D8EEB',
         mode: '#fff',
+        contact: '#414141'
     }
 };

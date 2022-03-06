@@ -36,7 +36,6 @@ const Routes: React.FC<Props> = ({ changeIdioma }) => {
       <Route path="/contato" element={
         <>
           <Header /> 
-          <Section /> 
           <Contact />
         </>   
       } />
