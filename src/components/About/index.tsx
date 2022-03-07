@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
 import { useSpring, animated  } from "react-spring";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
 import { Container, Content, Card, ImagesTechnologies, ContainerImageProfile } from './styles';
 import javascriptLogo from '../../assets/js.svg';
@@ -52,28 +57,33 @@ export function About() {
                 <animated.div style={{ ...props }}>
                   <Card>
                     <h3>Sobre mim</h3>
-                    <p>Meu nome completo é Rafael Oliveira Batista, tenho 21 anos, nasci em Campina Grande mas atualmente resido em João Pessoa ambas cidades na Paraíba.</p>
-                    <p>💻 Sou programador não por formação mas por vocação, 🥑 vegetariano,🎻 violinista,🤔 piadista ❤️e fã de beterraba.</p>
+                    <p>Me chamo Rafael Oliveira, tenho 21 anos, nascido e crescido em Campina Grande cidade do Maior São João do Mundo, me mudando aos 18 anos para João Pessoa com o objetivo de cursar Sistemas para Internet no Instituto Federal da Paraíba (IFPB).</p>
+                    <p>Trabalho com Desenvolvimento de Sofware desde 2019 onde inicialmente passei por 2 estágios e em seguida ingressei na área como Desenvolvedor Júnior na Indra, onde atualmente estou como Pleno.</p>
+                    <p>Sempre fui muito curioso em relação a computação como as coisas se comunicavam e o seu funcionamento no geral, com isso fui aprimorando minhas skills de Front-End com Back-End e Banco de Dados.</p>
                     <hr/>
                     <h3>Histórico profissional</h3>
-                    <p>Eu comecei a "brincar" com códigos em meados de 2009 e trabalhar profissionalmente em uma agência de criação e desenvolvimento web no ano de 2011.</p>
-                    <p>Em 2010 comecei o curso de web design na Microcamp Curitiba e finalizei em 2012, nesta mesma época conclui o curso técnico em informática com ênfase em programação no Colégio Estadual do Paraná (CEP).</p>
-                    <p>Desde então venho trabalhando com desenvolvimento web, design , Front-end e UX Design.</p>
-                    <p>Já passei por algumas tantas empresas, dentre elas MalaPronta , Pipefy e LojasKD se destacam por ter trabalhado em um único produto, onde acumulei skylls de Front-end e UX Design.</p>
-                    <hr/>
-                    <h3>Com o que trabalho hoje ?</h3>
-                    <p>Eu comecei a "brincar" com códigos em meados de 2009 e trabalhar profissionalmente em uma agência de criação e desenvolvimento web no ano de 2011.</p>
-                    <p>Em 2010 comecei o curso de web design na Microcamp Curitiba e finalizei em 2012, nesta mesma época conclui o curso técnico em informática com ênfase em programação no Colégio Estadual do Paraná (CEP).</p>
+                    <p>Meu primeiro estágio foi na Reitoria do IFPB onde atuava com um sistema open-source de gerenciamento de eventos desenvolvido em Laravel, ficando responsável pelo Back-end, inclusão de novas regras negociais e integrações com outros sistemas internos.</p>
+                    <p>O Segundo estágio foi na DWS uma corretora de seguros na qual modelei todo o banco de dados para comportar a regra negocial e a criação da API com a stack Python (Django, Django REST Framework).</p>
+                    <p>Ingressei na Indra onde inicialmente atuei com Java (Spring) e Angular em um sistema interno de métricas, em seguida atuei em um cliente financeiro adquirindo um vasto conhecimento sobre processos e desenvolvimento de um Chatbot que integra com o Camunda Modeler para os colaboradores desenharem seus processos e executarem. Atualmente trabalhando com Java e PL/SQL </p>
                     <hr/>
                     <h3>Sobre esse portfólio</h3>
-                    <p>Eu comecei a "brincar" com códigos em meados de 2009 e trabalhar profissionalmente em uma agência de criação e desenvolvimento web no ano de 2011.</p>
-                    <p>Em 2010 comecei o curso de web design na Microcamp Curitiba e finalizei em 2012, nesta mesma época conclui o curso técnico em informática com ênfase em programação no Colégio Estadual do Paraná (CEP).</p>
-                    <p>Desde então venho trabalhando com desenvolvimento web, design , Front-end e UX Design.</p>
+                    <p>Esse é um projeto que estava guardado a um certo tempo, desenvolvi com o intuito de reciclar os conhecimentos em React e Django. De acordo com os estudos, posteriormente estarei adicionando novas funcionalidades.</p>
                     <hr/>
                     <h3>Quer saber mais ?</h3>
-                    <p>Eu comecei a "brincar" com códigos em meados de 2009 e trabalhar profissionalmente em uma agência de criação e desenvolvimento web no ano de 2011.</p>
-                    <p>Em 2010 comecei o curso de web design na Microcamp Curitiba e finalizei em 2012, nesta mesma época conclui o curso técnico em informática com ênfase em programação no Colégio Estadual do Paraná (CEP).</p>
-                    <p>Desde então venho trabalhando com desenvolvimento web, design , Front-end e UX Design.</p>
+                    <p>Você pode me seguir nas redes sociais para ficar por dentro.</p>
+                    <p></p>
+                    <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        style={{ fontSize: 50 }}
+                      />
+                    </a>
+                    <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        style={{ fontSize: 50, marginLeft: 10 }}
+                      />
+                    </a>
                   </Card>
                 </animated.div>
               </Col>

@@ -19,6 +19,8 @@ export const Card = styled.div`
   border-radius: 0.25rem;
   padding: 1rem 1rem;
   margin-bottom: 2rem;
+  margin-left: 1rem;
+
   flex: 1;
 
   h3 {
@@ -34,6 +36,7 @@ export const Card = styled.div`
 
   @media (max-width: 767.20px) {
     margin-top: 4rem;
+    margin-left: 0;
   }
 `;
 

@@ -34,18 +34,20 @@ export const Contact = () => {
 
                 <Col className='iconsSocialMedias' col xs={12} sm={12} md={12} lg={10} xl={12}>
                   <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
-                    <img src={instaLogo} alt="Twitter Logo" width={60} height={60}/>
-                    <span style={{marginLeft: '10px', color: '#e44675'}}>Instagram</span>
+                    <a href="https://github.com/rafaeloliverone" target={'_blank'} rel="noreferrer">
+                      <img src={instaLogo} alt="Twitter Logo" width={60} height={60}/>
+                      <span style={{marginLeft: '10px', color: '#e44675'}}>Instagram</span>
+                    </a>
                   </Col>
                   <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
-                    <img src={gitLogo} alt="Twitter Logo" width={60} height={60}/>
-                    <a href="https://github.com/rafaeloliverone">
+                    <a href="https://github.com/rafaeloliverone" target={'_blank'} rel="noreferrer">
+                      <img src={gitLogo} alt="Git Logo" width={60} height={60}/>
                       <span style={{marginLeft: '10px', color: '#000'}}>Github&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </a>
                   </Col>
                   <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
-                    <img src={linkedinLogo} alt="Twitter Logo" width={60} height={60}/>
-                    <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/">
+                    <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/" target={'_blank'} rel="noreferrer">
+                      <img src={linkedinLogo} alt="LinkedIn Logo" width={60} height={60}/>
                       <span style={{marginLeft: '10px', color: '#0a66c2'}}>LinkedIn&nbsp;&nbsp;&nbsp;</span>
                     </a>
                   </Col>
