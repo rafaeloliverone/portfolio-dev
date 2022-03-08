@@ -48,9 +48,14 @@ export const ImagesTechnologies = styled.div`
   margin-top: 2rem;
   padding: 0 1rem;
 
-  img {
-    margin-top: 0.5rem;
-    margin-left: 1rem;
+  svg {
+    transition: all 0.25s;
+    margin-top: 1.2rem;
+
+    &:hover {
+      color: ${props => props.theme.colors.purple};
+      cursor: pointer;
+    }
   }
 `;
 
@@ -61,7 +66,7 @@ export const ContainerImageProfile = styled.div`
 
   img {
     width: 100%;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     border-radius: 0.5rem;
   }
 `;

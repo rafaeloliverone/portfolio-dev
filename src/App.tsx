@@ -26,12 +26,11 @@ export function App() {
     setJsonEn(Object.assign(jsonEn, enJson))
   }
 
-
   i18n
     .use(initReactI18next)
     .init({
     interpolation: { escapeValue: false },
-    lng: 'pt',
+    lng: localStorage.getItem('translationValue') || 'pt',
       resources: {
         en: {
           common: jsonEn
