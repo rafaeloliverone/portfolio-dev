@@ -38,8 +38,8 @@ export const Contact = () => {
 
                 <Col className='iconsSocialMedias' col xs={12} sm={12} md={12} lg={10} xl={12}>
                   <Col className='singleIcon' col xs={4} sm={4} md={12} lg={12} xl={12}>
-                    <a href="https://github.com/rafaeloliverone" target={'_blank'} rel="noreferrer">
-                      <img src={instaLogo} alt="Twitter Logo" width={60} height={60}/>
+                    <a href="https://www.instagram.com/rafael.code/" target={'_blank'} rel="noreferrer">
+                      <img src={instaLogo} alt="Instagram Logo" width={60} height={60}/>
                       <span style={{marginLeft: '10px', color: '#e44675'}}>Instagram</span>
                     </a>
                   </Col>

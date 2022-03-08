@@ -22,5 +22,6 @@
     "aboutPortfolio": "About this portfolio",
     "aboutPortfolioPart1": "This is a project that was kept for some time, I developed it with the intention to recycle the knowledge in React and Django. According to the studies, later I will be adding new features.",
     "knowMore": "Want to know more ?",
-    "knowMorePart1": "You can follow me on the social networks to stay in the know."
+    "knowMorePart1": "You can follow me on the social networks to stay in the know.",
+    "current": "Current"
 }

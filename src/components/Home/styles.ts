@@ -34,6 +34,8 @@ export const ContainerTechnologies = styled.div`
     transition: all 0.25s;
 
     &:hover {
+      transform:  translateY(-10px);
+
       color: ${props => props.theme.colors.purple};
       cursor: pointer;
     }

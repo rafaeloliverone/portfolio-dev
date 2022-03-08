@@ -71,24 +71,18 @@ export function Home() {
                       style={{ fontSize: 50, marginLeft: 10 }}
                     />
                   </a>
-                  <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
+                  <a href="https://www.instagram.com/rafael.code/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
                     <FontAwesomeIcon
                       icon={faInstagram}
                       style={{ fontSize: 50, marginLeft: 10 }}
                     />
                   </a>
-                  <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
+                  <a href="https://github.com/rafaeloliverone" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
                     <FontAwesomeIcon
                       icon={faGithubSquare}
                       style={{ fontSize: 50, marginLeft: 10 }}
                     />
                   </a>
-                 
-                  
-                  
-                  {/* <img src={javascriptLogo} width={40} height={40} alt="JavaScript"></img>
-                  <img src={nodeLogo} width={40} height={40} alt="Node"></img> 
-                  <img src={reactLogo} width={40} height={40} alt="React"></img> */}
                 </ContainerTechnologies>
               </animated.div>
             </Col>

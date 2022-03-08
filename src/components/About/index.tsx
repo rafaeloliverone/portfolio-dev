@@ -204,7 +204,7 @@ export function About() {
                     <h3>{t("knowMore")}</h3>
                     <p>{t("knowMorePart1")}</p>
                     <p></p>
-                    <a href="https://www.linkedin.com/in/rafael-oliveira-13a678181/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
+                    <a href="https://www.instagram.com/rafael.code/" target={'_blank'} rel="noreferrer" style={{ color: 'inherit' }}>
                       <FontAwesomeIcon
                         icon={faInstagram}
                         style={{ fontSize: 50 }}

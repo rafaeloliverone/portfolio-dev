@@ -16,6 +16,19 @@ interface ExperienceProps {
 export const Experience: React.FC<ExperienceProps> = (experienceProps) => {
     const {t, i18n} = useTranslation('common');
 
+    const formatDate = (date: string | undefined) => {
+      if (date) {
+        var options = { month: 'long', day: 'numeric' };
+        const language = localStorage.getItem("translationValue") == 'pt' ? 'pt-BR' : 'en-US';
+        
+        var monthYear = new Date(date).toLocaleDateString(language, { month: 'long', year: 'numeric' });
+        
+        return monthYear.charAt(0).toUpperCase() + monthYear.slice(1);;
+      }
+
+      return t("current")
+    }
+
     return (
         <Container>
           <Content>
@@ -27,12 +40,13 @@ export const Experience: React.FC<ExperienceProps> = (experienceProps) => {
                     <h1><a href="https://www.indracompany.com/pt-br/minsait" target="_blank" rel="noreferrer">@ {experienceProps.company}</a> </h1>
                   </ContainerRoleAndCompany>
                   <ContainerDateStartEnd>
-                    <h1>{experienceProps.startDate}-</h1>
-                    <h1> {experienceProps.endDate}</h1>
+                    <h1>{ formatDate(experienceProps.startDate) }</h1>
+                    <h1>&nbsp;&nbsp;-&nbsp;&nbsp;</h1>
+                    <h1> { formatDate(experienceProps.endDate) }</h1>
                   </ContainerDateStartEnd>
 
                   {experienceProps.description ? t(`${experienceProps.company}.description`).split('|').map( item => 
-                    <ContainerFlexTriangule>
+                    <ContainerFlexTriangule key={item}>
                       <Triangule />
                       <span>{item}</span>
                     </ContainerFlexTriangule>

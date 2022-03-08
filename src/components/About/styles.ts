@@ -23,6 +23,15 @@ export const Card = styled.div`
 
   flex: 1;
 
+  svg {
+    transition: all 0.25s;
+
+    &:hover {
+      color: ${props => props.theme.colors.purple};
+      transform: translateY(-8px);
+    }
+  }
+
   h3 {
     color: ${props => props.theme.colors.purple};
   }
@@ -53,6 +62,7 @@ export const ImagesTechnologies = styled.div`
     margin-top: 1.2rem;
 
     &:hover {
+      transform:  translateY(-8px);
       color: ${props => props.theme.colors.purple};
       cursor: pointer;
     }
@@ -66,7 +76,6 @@ export const ContainerImageProfile = styled.div`
 
   img {
     width: 100%;
-    /* margin: 0 1rem; */
     border-radius: 0.5rem;
   }
 `;
