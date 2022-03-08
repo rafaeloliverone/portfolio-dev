@@ -22,16 +22,30 @@ export const ContainerProfile = styled.div`
 export const ContainerTechnologies = styled.div`
   display: flex;
   flex: 1;
-  justify-content: center;
-  padding-bottom: 2rem;
-  
+  align-items: center;
+
+  hr {
+    height: 4px;
+    width: 70%;
+    color: ${props => props.theme.colors.quartenary};
+  }
+
+  svg {
+    transition: all 0.25s;
+
+    &:hover {
+      color: ${props => props.theme.colors.purple};
+      cursor: pointer;
+    }
+  }
+
   img {
     &:first-child {
       margin-left: 0;
     }
 
     margin-left: 2rem;
-  }
+  } 
 `
 
 export const Content = styled.section`
@@ -40,13 +54,25 @@ export const Content = styled.section`
   align-items: center;
   height: 88vh;
 
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    padding-bottom: 9rem;
+
+  }
+
   h1 {
     color: ${props => props.theme.colors.purple};
-
   }
 
   p {
     font-size: 150%;
     color: ${props => props.theme.colors.ternary};
+  }
+
+  .apresentation {
+    /* background-color:blue ; */
   }
 `

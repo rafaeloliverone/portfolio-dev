@@ -63,11 +63,12 @@ export const Menu = styled.div`
 
   button {
     font-size: 1rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     color: var(--white);
     background: var(--secondary);
     border: 0;
-    padding: 0 2rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
     border-radius: 0.25rem;
     height: 2.5rem;
     transition: filter 0.2s;

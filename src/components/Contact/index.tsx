@@ -1,7 +1,7 @@
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
 import { useSpring, animated  } from "react-spring";
 import { useTranslation } from "react-i18next";
-
+import { useEffect } from "react";
 
 import { Container, Content, InputWithIcon } from './styles';
 import profileLogo from '../../assets/profile.png';
@@ -21,6 +21,10 @@ export const Contact = () => {
     to: { opacity: 1, y: 0, rotateZ: 0 , transform: 'scale(1)'}, delay: 200
   });
   
+
+  useEffect(() => {
+    document.title = "Contato"
+  }, [])
 
   return (
     <Container>

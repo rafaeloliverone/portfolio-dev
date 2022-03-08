@@ -1,5 +1,5 @@
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from 'react';
 import ReactLoading from 'react-loading';
 import { AxiosResponse } from 'axios';
@@ -44,6 +44,7 @@ export const Experiences: React.FC<Props> = ({changeIdioma}) => {
   }
 
   useEffect(() => {
+    document.title = "Experiências"
     setLoadingData(true);
     const fetchExperiencesData = async () => {
       await api.get<Experience[]>('/experiences/list').then((res: AxiosResponse<Experience[]>) => {
@@ -59,6 +60,7 @@ export const Experiences: React.FC<Props> = ({changeIdioma}) => {
     fetchExperiencesData();
 
   }, [])
+
 
   const tranformJsonEnglishAndPortuguese = async(response: any) => {
     let jsonEnglish = {}
@@ -115,7 +117,7 @@ export const Experiences: React.FC<Props> = ({changeIdioma}) => {
                     <NameCompanies>
                       <div>
                         <button id="Indra" onClick={nameCompanyOnClick} value="Indra">Indra</button>
-                        <button id="DWS" onClick={nameCompanyOnClick} value="DWS">DWS Corretora</button>
+                        <button id="DWS" onClick={nameCompanyOnClick} value="DWS">DWS</button>
                         <button id="IFPB" onClick={nameCompanyOnClick} value="IFPB">Reitoria IFPB</button>
                         <button id="Unisigma"onClick={nameCompanyOnClick} value="Unisigma">Unisigma</button>
                       </div>

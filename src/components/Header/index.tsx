@@ -1,5 +1,5 @@
 import { Container as ContainerBootstrap, Row, Col } from 'styled-bootstrap-grid';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 
 import { Container, Content, Menu, Languages } from './styles';
@@ -11,6 +11,7 @@ export function Header() {
   const [t, i18n] = useTranslation('common');
 
   const changeLanguage = (language: string) => {
+    localStorage.setItem('translationValue', language);
     return i18n.changeLanguage(language)
   }
 
@@ -41,7 +42,6 @@ export function Header() {
                 <img src={euaLogo} width={40} height={40} onClick={() => changeLanguage('en')}></img>
               </Languages>
             </Col>
-              
           </Row>
         </ContainerBootstrap>
       </Content>

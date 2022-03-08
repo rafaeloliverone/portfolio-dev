@@ -68,7 +68,7 @@ export const Content = styled.section`
       margin-top: 2rem;
       text-align: center;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         margin-left: 0;
         text-align: center;
       }
@@ -78,11 +78,11 @@ export const Content = styled.section`
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
       flex-direction: column;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       span {
         visibility: hidden;
       }

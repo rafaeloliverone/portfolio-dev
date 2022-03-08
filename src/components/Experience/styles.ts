@@ -79,12 +79,17 @@ export const ContainerFlexTriangule = styled.section`
 
 export const ContainerRoleAndCompany = styled.section`
   display: flex;
+
   h1 {
     font-size: 1.5rem;
+
+    @media (max-width: 450px) {
+      font-size: 1.1rem !important;
+    }
+
     a {
       text-decoration: none;
       color: var(--purple);
-
     }
   }
 

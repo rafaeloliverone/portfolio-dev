@@ -48,13 +48,15 @@ export const NameCompanies = styled.div`
 
   div {
     border-bottom: 2px solid ${props => props.theme.colors.progressBar};
+    
+    justify-content: space-around;
   }
 
   button {
     border: none;
     color: ${props => props.theme.colors.quartenary} ;
     background: none !important;
-    margin-right: 30px;
+    margin-right: 15px;
     padding: 10px 5px;
     position: relative;
 
