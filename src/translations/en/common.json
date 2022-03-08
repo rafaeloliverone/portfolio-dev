@@ -8,5 +8,19 @@
     "nameForm": "Name",
     "topicForm": "Topic",
     "messageForm": "Message",
-    "textButtonSubmit": "Send"
+    "textButtonSubmit": "Send",
+    "titleApresentation": "HELLO, MY NAME IS RAFAEL OLIVEIRA",
+    "descriptionApresentation": "I am a FullStack Web Developer, currently working with the technologies of the Java ecosystem.",
+    "aboutMe": "About me",
+    "aboutMePart1": "My name is Rafael Oliveira, I'm 21 years old, born and raised in Campina Grande city of the largest São João do Mundo, moving at age 18 to João Pessoa with the goal of studying Internet Systems at the Federal Institute of Paraíba (IFPB).",
+    "aboutMePart2": "I have been working with Software Development since 2019 where I initially went through 2 internships and then joined the area as a Junior Developer at Indra, where I am currently as a Full Developer.",
+    "aboutMePart3": "I have always been very curious about computing, how things communicate and how they work in general, so I have been improving my skills in Front-End with Back-End and Database.",
+    "professionalBackground": "Professional Background",
+    "professionalPart1": "My first internship was at Reitoria of IFPB where I worked with an open-source event management system developed in Laravel, being responsible for the Back-end, inclusion of new business rules and integrations with other internal systems.",
+    "professionalPart2": "The second internship was at DWS, an insurance broker, where I modeled the whole database to support the business rule and API creation with Python stack (Django, Django REST Framework).",
+    "professionalPart3": "I joined Indra where initially I worked with Java (Spring) and Angular in an internal metrics system, then I worked in a financial client acquiring a vast knowledge about processes and development of a Chatbot that integrates with Camunda Modeler for employees to design and execute their processes. Currently working with Java and PL/SQL.",
+    "aboutPortfolio": "About this portfolio",
+    "aboutPortfolioPart1": "This is a project that was kept for some time, I developed it with the intention to recycle the knowledge in React and Django. According to the studies, later I will be adding new features.",
+    "knowMore": "Want to know more ?",
+    "knowMorePart1": "You can follow me on the social networks to stay in the know."
 }

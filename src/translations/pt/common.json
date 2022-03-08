@@ -8,5 +8,19 @@
     "nameForm": "Nome",
     "topicForm": "Assunto",
     "messageForm": "Mensagem",
-    "textButtonSubmit": "Enviar"
+    "textButtonSubmit": "Enviar",
+    "titleApresentation": "OLÁ, ME CHAMO RAFAEL OLIVEIRA",
+    "descriptionApresentation": "Sou Desenvolvedor Web FullStack, atualmente trabalhando com as tecnologias do ecossistema Java.",
+    "aboutMe": "Sobre mim",
+    "aboutMePart1": "Me chamo Rafael Oliveira, tenho 21 anos, nascido e crescido em Campina Grande cidade do Maior São João do Mundo, me mudando aos 18 anos para João Pessoa com o objetivo de cursar Sistemas para Internet no Instituto Federal da Paraíba (IFPB).",
+    "aboutMePart2": "Trabalho com Desenvolvimento de Sofware desde 2019 onde inicialmente passei por 2 estágios e em seguida ingressei na área como Desenvolvedor Júnior na Indra, onde atualmente estou como Pleno.",
+    "aboutMePart3": "Sempre fui muito curioso em relação a computação como as coisas se comunicavam e o seu funcionamento no geral, com isso fui aprimorando minhas skills de Front-End com Back-End e Banco de Dados.",
+    "professionalBackground": "Histórico profissional",
+    "professionalPart1": "Meu primeiro estágio foi na Reitoria do IFPB onde atuava com um sistema open-source de gerenciamento de eventos desenvolvido em Laravel, ficando responsável pelo Back-end, inclusão de novas regras negociais e integrações com outros sistemas internos.",
+    "professionalPart2": "O Segundo estágio foi na DWS uma corretora de seguros na qual modelei todo o banco de dados para comportar a regra negocial e a criação da API com a stack Python (Django, Django REST Framework).",
+    "professionalPart3": "Ingressei na Indra onde inicialmente atuei com Java (Spring) e Angular em um sistema interno de métricas, em seguida atuei em um cliente financeiro adquirindo um vasto conhecimento sobre processos e desenvolvimento de um Chatbot que integra com o Camunda Modeler para os colaboradores desenharem seus processos e executarem. Atualmente trabalhando com Java e PL/SQL",
+    "aboutPortfolio": "Sobre esse portfólio",
+    "aboutPortfolioPart1": "Esse é um projeto que estava guardado a um certo tempo, desenvolvi com o intuito de reciclar os conhecimentos em React e Django. De acordo com os estudos, posteriormente estarei adicionando novas funcionalidades.",
+    "knowMore": "Quer saber mais ?",
+    "knowMorePart1": "Você pode me seguir nas redes sociais para ficar por dentro."
 }
